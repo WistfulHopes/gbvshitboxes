@@ -4,10 +4,11 @@
 A hitbox viewer for Granblue Fantasy Versus. Heavily based off of Altimor's Guilty Gear -Strive- hitbox viewer at https://github.com/AltimorTASDK/strivehitboxes/.
 
 # Usage
-Run striveinjector.exe after starting the game. strivehitboxes.dll must be in the same folder.
+Run gbvsinjector.exe after starting the game. gbvshitboxes.dll must be in the same folder.
 
 # Box colors
 Green = Hurtbox
 Cyan = Hurtbox (Counterhit state)
 Red = Hitbox
 Yellow = Pushbox
+Purple = Throw
