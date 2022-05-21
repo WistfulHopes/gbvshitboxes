@@ -8,7 +8,11 @@ Run gbvsinjector.exe after starting the game. gbvshitboxes.dll must be in the sa
 
 # Box colors
 Green = Hurtbox
+
 Cyan = Hurtbox (Counterhit state)
+
 Red = Hitbox
+
 Yellow = Pushbox
+
 Purple = Throw
