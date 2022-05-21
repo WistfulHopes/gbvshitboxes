@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gbvshitboxes", "gbvshitboxes\gbvshitboxes.vcxproj", "{7B7EA918-9CD3-4FA6-AFFA-FFFA1636B79B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gbvsinjector", "gbvsinjector\gbvsinjector.vcxproj", "{FA22896C-8058-46BC-982C-9DC3C458D02F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B7EA918-9CD3-4FA6-AFFA-FFFA1636B79B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7B7EA918-9CD3-4FA6-AFFA-FFFA1636B79B}.Debug|Win32.Build.0 = Debug|Win32
+		{7B7EA918-9CD3-4FA6-AFFA-FFFA1636B79B}.Debug|x64.ActiveCfg = Debug|x64
+		{7B7EA918-9CD3-4FA6-AFFA-FFFA1636B79B}.Debug|x64.Build.0 = Debug|x64
+		{7B7EA918-9CD3-4FA6-AFFA-FFFA1636B79B}.Release|Win32.ActiveCfg = Release|Win32
+		{7B7EA918-9CD3-4FA6-AFFA-FFFA1636B79B}.Release|Win32.Build.0 = Release|Win32
+		{7B7EA918-9CD3-4FA6-AFFA-FFFA1636B79B}.Release|x64.ActiveCfg = Release|x64
+		{7B7EA918-9CD3-4FA6-AFFA-FFFA1636B79B}.Release|x64.Build.0 = Release|x64
+		{FA22896C-8058-46BC-982C-9DC3C458D02F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FA22896C-8058-46BC-982C-9DC3C458D02F}.Debug|Win32.Build.0 = Debug|Win32
+		{FA22896C-8058-46BC-982C-9DC3C458D02F}.Debug|x64.ActiveCfg = Debug|x64
+		{FA22896C-8058-46BC-982C-9DC3C458D02F}.Debug|x64.Build.0 = Debug|x64
+		{FA22896C-8058-46BC-982C-9DC3C458D02F}.Release|Win32.ActiveCfg = Release|Win32
+		{FA22896C-8058-46BC-982C-9DC3C458D02F}.Release|Win32.Build.0 = Release|Win32
+		{FA22896C-8058-46BC-982C-9DC3C458D02F}.Release|x64.ActiveCfg = Release|x64
+		{FA22896C-8058-46BC-982C-9DC3C458D02F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+EndGlobal
