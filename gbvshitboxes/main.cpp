@@ -21,7 +21,7 @@ constexpr auto AHUD_PostRender_index = 208;
 
 // Actually AREDHUD_Battle
 const auto** AHUD_vtable = (const void**)get_rip_relative(sigscan::get().scan(
-	"\x48\x8D\x05\xF0\xDE\xD0\x01", "xxxxxxx") + 3);
+	"\x48\x8D\x05\x80\xBD\xD0\x01", "xxxxxxx") + 3);
 
 using AHUD_PostRender_t = void(*)(AHUD*);
 AHUD_PostRender_t orig_AHUD_PostRender;

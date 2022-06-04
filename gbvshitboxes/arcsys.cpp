@@ -3,7 +3,7 @@
 
 using StaticClass_t = UClass*(*)();
 const auto AREDGameState_Battle_StaticClass = (StaticClass_t)(
-	sigscan::get().scan("\x00\x00\x48\x8D\x05\xF7\x71\x34\x00", "xxxxxxxxx") - 0x20);
+	sigscan::get().scan("\x00\x00\x48\x8D\x05\xD7\x3F\x9E\xFF", "xxxxxxxxx") - 0x20);
 
 using asw_entity_is_active_t = bool(*)(const asw_entity*, bool);
 const auto asw_entity_is_active = (asw_entity_is_active_t)(
@@ -23,11 +23,11 @@ const auto asw_entity_get_pos_y = (asw_entity_get_pos_y_t)(
 
 using asw_entity_pushbox_width_t = int(*)(const asw_entity*);
 const auto asw_entity_pushbox_width = (asw_entity_pushbox_width_t)(
-	sigscan::get().scan("\xD2\x48\x0F\x44\xD9\x8B\x83\x24\x07\x01\x00", "xxxxxxxxxxx") - 0x70);
+	sigscan::get().scan("\xD2\x48\x0F\x44\xD9\x8B\x83\x30\x07\x01\x00", "xxxxxxxxxxx") - 0x70);
 
 using asw_entity_pushbox_height_t = int(*)(const asw_entity*);
 const auto asw_entity_pushbox_height = (asw_entity_pushbox_height_t)(
-	sigscan::get().scan("\xD2\x48\x0F\x44\xD9\x8B\x83\x28\x07\x01\x00", "xxxxxxxxxxx") - 0x70);
+	sigscan::get().scan("\xD2\x48\x0F\x44\xD9\x8B\x83\x34\x07\x01\x00", "xxxxxxxxxxx") - 0x70);
 
 using asw_entity_pushbox_bottom_t = int(*)(const asw_entity*);
 const auto asw_entity_pushbox_bottom = (asw_entity_pushbox_bottom_t)(

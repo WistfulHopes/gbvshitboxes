@@ -15,11 +15,11 @@ using FCanvasTriangleItem_ctor_t = void(*)(
 	const FVector2D&,
 	const FTexture*);
 const auto FCanvasTriangleItem_ctor = (FCanvasTriangleItem_ctor_t)(
-	sigscan::get().scan("\x94\xBD\xC4\x00\x48\x89\x01\x48\x8D\x05\xB2", "xxxxxxxxxxx") - 0x20);
+	sigscan::get().scan("\x6C\xB2\xC4\x00\x48\x89\x01\x48\x8D\x05\x62", "xxxxxxxxxxx") - 0x20);
 
 using FCanvas_Flush_GameThread_t = void(*)(FCanvas *, bool);
 const auto FCanvas_Flush_GameThread = (FCanvas_Flush_GameThread_t)(
-	sigscan::get().scan("\x0D\x83\x89\x2D\x02\x48\x89\xB4", "xxxxxxxx") - 0x30);
+	sigscan::get().scan("\x0D\x23\x84\x2D\x02\x48\x89\xB4", "xxxxxxxx") - 0x30);
 
 using UCanvas_K2_DrawLine_t = void(*)(UCanvas*, FVector2D, FVector2D, float, const FLinearColor&);
 const auto UCanvas_K2_DrawLine = (UCanvas_K2_DrawLine_t)(
@@ -67,7 +67,7 @@ HMODULE BaseModule = GetModuleHandleW(NULL);
 //UWorld** GWorld = reinterpret_cast<UWorld**>(BaseModule + 0x3EFAA48);
 
 UWorld **GWorld = (UWorld**)get_rip_relative(
-	sigscan::get().scan("\x48\x8B\x1D\x86\x87\xC5\x03", "xxxxxxx") + 0x3);
+	sigscan::get().scan("\x48\x8B\x05\xFF\x2C\xA7\x03", "xxxxxxx") + 0x3);
 
 FTexture **GWhiteTexture = (FTexture**)get_rip_relative((uintptr_t)UCanvas_K2_DrawTriangle + 0x3A);
 
